@@ -28,3 +28,15 @@ Each example application must:
 ~~~sh
 ./bin/www
 ~~~
+
+## Usage
+
+~~~sh
+# Example creation of quote:
+curl -i -X POST --url https://rosetta-string-nodejs-koa.herokuapp.com/create \
+    --header "Authorization: Basic base64string=" \
+    --data "quote_text=Strive for grace, not perfection."
+
+# Example retrieval of quote:
+curl -i --url https://rosetta-string-nodejs-koa.herokuapp.com/random
+~~~
