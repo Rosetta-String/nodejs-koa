@@ -6,7 +6,7 @@ module.exports = function* createQuote() {
 
     query = db('quotes')
         .insert({
-            quote_text: this.request.quote_text
+            quote_text: this.request.body.quote_text
         });
     try {
         results = yield query;
