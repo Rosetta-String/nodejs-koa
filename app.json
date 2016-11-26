@@ -1,0 +1,9 @@
+{
+    "buildpacks": [
+        {
+            "url": "heroku/node.js"
+        }
+    ],
+    "name": "Rosetta-String Node.js/Koa",
+    "success_url": "/"
+}

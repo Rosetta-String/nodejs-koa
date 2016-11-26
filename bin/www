@@ -1,0 +1,4 @@
+#!/bin/bash
+
+psql $DATABASE_URL -f ./script/create_tables.sql
+npm install && npm start
